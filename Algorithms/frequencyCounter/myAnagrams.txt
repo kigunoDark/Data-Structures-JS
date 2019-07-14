@@ -1,0 +1,36 @@
+ function chekSol(str1, str2){
+    if(str1.length !== str2.length)
+    {
+        console.log("You need to have the same length of string!");
+        return false;
+    }
+
+    let fCount1 = {};
+    let fCount2 = {};
+
+
+    for(let sign of str1){
+        fCount1[sign] = (fCount1[sign] || 0) + 1;
+    }
+
+     for(let sign of str2){
+        fCount2[sign] = (fCount2[sign] || 0) + 1;
+    }
+    console.log(fCount1);
+    console.log(fCount2);
+    
+    for(let key in fCount1)
+    {
+        if(!(key in fCount2))
+        {
+            console.log('The number of same letters should be the same!');
+            return false;
+        }
+        if(fCount2[key] !== fCount1[key])
+        {
+            return false;
+        }
+       
+    }
+     return true;
+}

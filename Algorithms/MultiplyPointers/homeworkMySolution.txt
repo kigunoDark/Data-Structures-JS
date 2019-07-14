@@ -1,0 +1,9 @@
+function sumZero(arr){
+    let fCouner1 = {};
+   for(let val of arr)
+   {
+       fCouner1[val] = (fCouner1[val] || 0 ) + 1;
+   }
+   console.log(Object.keys(fCouner1).length);
+  
+}
