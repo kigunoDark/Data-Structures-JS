@@ -16,3 +16,4 @@ function linearSearch(str1,str2){
   }
   return c;
 }
+
