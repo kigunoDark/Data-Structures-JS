@@ -78,4 +78,12 @@ class BST {
 
 let tree = new BST();
 tree.insert(1);
-console.log(tree.find(2));
+
+let list = {
+    a: 'hey',
+    b: {
+        c: 'What?',
+        d: 'Vlad'
+    }
+}
+console.log(list.find('Vlad'));
